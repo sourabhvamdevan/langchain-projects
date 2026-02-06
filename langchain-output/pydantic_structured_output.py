@@ -20,10 +20,10 @@ class Review(BaseModel):
         description="Overall sentiment of the review"
     )
     pros: Optional[List[str]] = Field(
-        default=None, description="List of pros mentioned in the review"
+        default=None, description="List positives mentioned in the review"
     )
     cons: Optional[List[str]] = Field(
-        default=None, description="List of cons mentioned in the review"
+        default=None, description="List negatives mentioned in the review"
     )
     name: Optional[str] = Field(
         default=None, description="Name of the reviewer"
